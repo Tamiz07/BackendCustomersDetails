@@ -65,10 +65,14 @@ class Customer(CustomerDetails):
             password = input("Password: ")
             with open('customers.csv', 'r') as file:
                 reader = csv.reader(file)
+                user_exists = False
                 for row in reader:
                     if row[2] == email and row[4] == password:
-                        print("Login successful!")
+                        user_exists = True
                         break
+                if user_exists:
+                    print("Login successful!")
+                    return # exit the method when login is successful
                 else:
                     print("Invalid email or password")
 
