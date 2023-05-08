@@ -1,0 +1,11 @@
+Name,Barcode,Brand,Description,Price,Available
+Product 1,34567890,Brand 1,This is sample,200,True
+Product 2,4567890,Brand 2,This is sample,100,False
+Product 3,35478673,Brand 3,This is sample,150,True
+Product 4,87458726,Brand 4,This is sample,250,True
+Product 5,8437528937,Brand 5,This is sample,300,True
+Product 6,3274698,Brand 6,This is sample,350,False
+Product 7,834789324,Brand 7,This is sample,180,True
+Product 8,324784,Brand 8,This is sample,170,False
+Product 9,6734256,Brand 9,This is sample,90,True
+Product 10,57823456,Brand 10,This is sample,140,True
