@@ -40,4 +40,4 @@ class Products:
 # product = Products("Product 1", 34567890, "Brand 1", "This is sample", 200, True)
 # Products.add_to_csv(product.name, product.barcode, product.brand, product.description, product.price, product.available)
 
-Products.display_products()
+# Products.display_products()
