@@ -30,8 +30,8 @@ class CustomerDetails:
 
 
 class Customer(CustomerDetails):
-    def __init__(self):
-        pass
+    def __init__(self, firstname: str, lastname: str, email: str, phone: int, password: str):
+        super().__init__(firstname, lastname, email, phone, password)
 
     def signup(self):
         firstname = input("First name: ")
