@@ -48,7 +48,8 @@ class Customer(CustomerDetails):
                         email_exists = True
                         break
                 if email_exists:
-                    print("This Email id already exists. Please choose another.")
+                    message1 = "This Email id already exists. Please choose another!"
+                    print(message.center(80))
                 else:
                     break
 
@@ -57,7 +58,12 @@ class Customer(CustomerDetails):
 
         # Add new customer details to file
         self.add_to_csv(firstname, lastname, email, phone, password)
-        print("Signup successfully.")
+        message2 = f"Welcome {firstname} {lastname}"
+        message3 = "You've successfully created an account with ShopKART"
+        print(message2.center(80))
+        print(message3.center(80))
+        print()
+        print("Continue to login with registered mail id")
 
     def login(self):
         while True:
@@ -71,15 +77,20 @@ class Customer(CustomerDetails):
                         user_exists = True
                         break
                 if user_exists:
-                    print("Login successful!")
+                    message4 = "You've successfully Login!"
+                    message5 = "Please make yourself at home and enjoy shopping with us!"
+                    print(message4.center(80))
+                    print(message5.center(80))
+                    print()
                     return # exit the method when login is successful
                 else:
-                    print("Invalid email or password")
+                    message6 = "Invalid email or password"
+                    print(message6.center(80))
 
 
 # example usage
-cus = Customer()
-cus.signup()
-cus.login()
+# cus = Customer()
+# cus.signup()
+# cus.login()
 
-print(CustomerDetails.display_items())
+# print(CustomerDetails.display_items())
